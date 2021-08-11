@@ -1,0 +1,395 @@
+:root {
+  --brand-color: #dd381a;
+  --brand-font: Staatliches, sans-serif;
+  --body-font: "Josefin Sans", sans-serif;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, input[type="submit"] {
+  font-family: var(--brand-font);
+  font-weight: 400;
+}
+
+p, a {
+  font-family: var(--body-font);
+}
+
+p {
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#header-img {
+  width: 10rem;
+}
+
+#header-img:focus {
+  outline: 2px solid #000000;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--brand-color);
+}
+
+.nav-button {
+  background-color: #ffffff;
+  color: var(--brand-color);
+  border: 2px solid var(--brand-color);
+  padding: 0.8rem 2rem;
+  font-family: var(--brand-font);
+  font-weight: 400;
+  font-size: 1.8rem;
+  transition: 0.3s background-color;
+}
+
+.nav-button:hover, .nav-button:focus {
+  background-color: var(--brand-color);
+  color: #ffffff;
+}
+
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 10rem 0 0 8rem;
+  min-height: 90vh;
+  max-height: 90vh;
+  background: linear-gradient(125.39deg, rgba(0, 0, 0, 0.78) 40%, rgba(0, 0, 0, 0) 86.47%), url(images/car-front.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.hero-title {
+  font-size: 10rem;
+  font-weight: 400;
+}
+
+.hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+
+#why-choose-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 8rem 2rem;
+  background-color: #ffffff;
+}
+
+.choose-title {
+  text-align: center;
+  color: #000000;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  gap: 5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #ffffff;
+  border: 3px solid var(--brand-color);
+  padding: 2rem 5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.f-1 {
+  box-shadow: 10px 10px 0 0 var(--brand-color);
+}
+
+.f-2 {
+  box-shadow: 0 10px 0 0 var(--brand-color);
+}
+
+.f-3 {
+  box-shadow: -10px 10px 0 0 var(--brand-color);
+}
+
+.feature-title {
+  font-size: 3rem;
+  color: var(--brand-color);
+  border-radius: 50%;
+  border: 3px solid var(--brand-color);
+  padding: 2rem;
+}
+
+.feature-desc {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+#how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 8rem 2rem;
+  background-color: #000000;
+}
+
+.how-title {
+  color: #ffffff;
+  text-align: center;
+}
+
+#video {
+  max-width: 100%;
+  border: 4px solid var(--brand-color);
+  border-radius: 10px;
+}
+
+
+#get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 10rem 8rem 20rem;
+  background: linear-gradient(125.39deg, rgba(0, 0, 0, 0.78) 40%, rgba(0, 0, 0, 0) 86.47%), url(images/car-back.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.start-desc {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+#form label {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: auto;
+  left: -10000px;
+  overflow: hidden;
+}
+
+#email {
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-family: var(--body-font);
+  padding: 1rem;
+  border: 3px solid var(--brand-color);
+}
+
+#submit {
+  padding: 1rem;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  background-color: var(--brand-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 0.3s background-color;
+}
+
+#submit:hover, #submit:focus {
+  color: var(--brand-color);
+  border: 3px solid var(--brand-color);
+  background-color: #ffffff;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+  padding: 4rem 3rem;
+  background-color: var(--brand-color);
+  color: #ffffff;
+  font-weight: 400;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer a:hover, footer a:focus {
+  text-decoration: none;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.bottom {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    position: static;
+  }
+
+  #nav-bar {
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  #hero {
+    min-height: initial;
+    max-height: initial;
+    padding: 8rem 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #get-started {
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 3rem;
+  }
+
+  .start-title {
+    text-align: center;
+  }
+
+  .start-desc {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  #form {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .top {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .right {
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .feature {
+    box-shadow: 0 10px 0 0 var(--brand-color);
+  }
+}

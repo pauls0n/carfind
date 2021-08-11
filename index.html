@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarFind Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#">
+        <img src="images/logo.png" alt="CarFind Logo" id="header-img" />
+      </a>
+      <nav id="nav-bar">
+        <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
+        <a href="#how-it-works" class="nav-link">How it Works</a>
+        <a href="#get-started" class="nav-link nav-button">Get Started</a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <header>
+        <h1 class="hero-title">Find Your Dream Car</h1>
+      </header>
+      <p class="hero-subtitle">
+        We will help you find a car that is suitable to your needs.
+      </p>
+    </section>
+
+    <section id="why-choose-us">
+      <header>
+        <h2 class="choose-title">Why Choose Us</h2>
+      </header>
+      <div class="features">
+        <div class="feature f-1">
+          <h3 class="feature-title">2M+</h3>
+          <p class="feature-desc">satisfied customers</p>
+        </div>
+        <div class="feature f-2">
+          <h3 class="feature-title">5B+</h3>
+          <p class="feature-desc">registered dealers</p>
+        </div>
+        <div class="feature f-3">
+          <h3 class="feature-title">5/5</h3>
+          <p class="feature-desc">customer rating</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <header>
+        <h2 class="how-title">How it Works</h2>
+      </header>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/aiq9rLw11I4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section id="get-started">
+      <header>
+        <h2 class="start-title">Get Started</h2>
+      </header>
+      <p class="start-desc">
+        Just enter your email address and find your dream car.
+      </p>
+      <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <label for="email">Enter your email address:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email address"
+        />
+        <input type="submit" value="Get Started" id="submit" />
+      </form>
+    </section>
+
+    <footer>
+      <div class="top">
+        <div class="left">
+          <p>
+            Made by
+            <a href="https://github.com/pauls0n" target="_blank">@pauls0n</a>
+          </p>
+        </div>
+        <div class="right">
+          <p>
+            Images taken by <a href="https://unsplash.com/photos/fxliDZFt-qY" target="_blank">@eagleeyevisuals</a> and
+            <a href="https://unsplash.com/photos/eqW1MPinEV4" target="_blank">@joshkobshoots</a> from
+            <a href="https://unsplash.com/" target="_blank">Unsplash.</a>
+          </p>
+          <p>Ferrari video from <a href="https://youtu.be/aiq9rLw11I4" target="_blank">Ferrari's YouTube video</a></p>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>
+          This webpage was made for learning purposes only. If the content of
+          this site resembles any actual website or company, it is purely
+          coincidental.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
